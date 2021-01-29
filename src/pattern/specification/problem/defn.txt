@@ -1,0 +1,7 @@
+Suppose we are developing a website for buying/selling flat apartments.
+The system is set up, it lacks any filtering mechanism.
+
+We are required to create a filtering mechanism!
+Start with House, and continue with HouseFilter
+
+

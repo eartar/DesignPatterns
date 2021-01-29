@@ -1,0 +1,18 @@
+we need a better solution, where every filter can be a standalone class-like structure
+and a "middleman" class to apply the filters on the data
+
+In other words;
+
+This is called the Specification Pattern.
+
+Lets separate specifications from the system into a package called specs.
+Lets separate filters from the system into a package called filters.
+
+We will use the a filter implementation of our choice to apply filters. In our case a filter interface
+is unnecessary here, however we'll keep it in case we have additional house filter types in the future.
+So we will be open for extension! - Remember O in solid.
+
+To HouseFilterImpl we will attach a spec to do the filtering in our program.
+
+
+
