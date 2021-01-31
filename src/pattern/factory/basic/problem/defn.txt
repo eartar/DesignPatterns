@@ -1,0 +1,6 @@
+Creating a food order online, you are asking the user to create and order using GetirYemek or YemekSepeti.
+To order food, the user must enter their id and password and encryption operations should be done before connecting to the related servers.
+
+GetirYemek uses RSA while YemekSepeti uses EAS for encryption.
+
+However this is a terrible architecture, totally not in line with Open/Close principle.

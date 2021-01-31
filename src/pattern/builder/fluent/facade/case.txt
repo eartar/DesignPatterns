@@ -1,3 +1,0 @@
-There are too many builders that need to work in tandem, it looks messy to create objects.
-
-The solution and facade patterns can be used together to create readable constructors.

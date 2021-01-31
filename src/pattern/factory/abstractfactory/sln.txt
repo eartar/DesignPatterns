@@ -1,0 +1,9 @@
+Abstract Factory Design Pattern is all about interchangeability of classes that implement a common interface.
+Commonly, examples are given on GUI where a ButtonFactory creates a ios or win button, however GUI examples are convoluted.
+
+Lets create an abstract factory for an oven. Using an oven can be divided in 3 parts.
+pre -> set heat, insert rack/grill, put a water of glass
+mid -> duration, can open to check, if so how do you check(put a knife and see if it comes out clear etc)
+post -> cleaning
+
+Dependent on what is cooked, multiple methods are being changed to work with the class that is being cooked.

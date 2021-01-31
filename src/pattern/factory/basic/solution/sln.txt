@@ -1,0 +1,5 @@
+Solution lies in the Factory Design Pattern, where a factory class is created which is responsible for creation of objects dependent on the constructor that is called.
+
+The client is expected to use the related factory method to create an object. OrderFood's constructor is also made private to prevent access.
+If factory pattern is being implemented on an already existing code base which can't be changed, the parametric constructor can stay public.
+However this is likely to create confusion among clients later. You should refactor alongside coding anyways!
