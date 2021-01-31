@@ -1,0 +1,8 @@
+We have the class TeachingAssistant, which extends the class Student.
+The extended fields are assistedCourse and supervisingProfessor.
+
+The builder should be able to match up with the capabilities of classes.
+Therefore we should implement TeachingAssistantBuilder.
+To mirror the class behavior, this new builder should extend from StudentBuilder.
+
+But there are problems caused by inheritance

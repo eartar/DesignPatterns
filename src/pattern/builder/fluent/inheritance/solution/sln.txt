@@ -1,0 +1,13 @@
+We want every function of every builder function to return the inherited class in the hierarchy.
+While this is not a problem for TeachingAssistantBuilder(the inherited class), the base class StudentBuilder can't
+return a TeachingAssistantBuilder since it has no knowledge whether or not it is building a Student or a TeachingAssistant.
+
+Therefore the StudentBuilder class should somehow be told the type of the object that is being built.
+
+Using recursive generics(named template in other languages), we can make the Student builder;
+(generics) get the a type "SELF"
+(recursive) where "SELF" should extend from StudentBuilder itself
+
+In other words, you have a generic, that is extending from(recursing on) itself(hence the complicated name).
+
+The return types of every building function in the base class should also respect this SELF class
