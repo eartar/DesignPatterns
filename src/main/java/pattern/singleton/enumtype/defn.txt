@@ -1,0 +1,5 @@
+Enums in java are serializable by default, however the fields are not properly serialized.
+
+Enum Singleton Design can not be used in reflection, and only one copy can exist in the system; therefore it is immune to problems of basic singleton
+
+This example doesn't demonstrate the case where serialization fails, for further reading see https://stackoverflow.com/a/15522276

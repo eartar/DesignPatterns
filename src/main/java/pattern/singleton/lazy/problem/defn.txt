@@ -1,0 +1,7 @@
+In a multi-thread environment, lazy initialization will cause race conditions.
+
+For example two threads can go through the if statement in getInstance function.
+
+To prevent this, synchronized keyword must be used on the function.
+An alternative solution can be achieved using mutexes.
+A much better solution to this problem is to exploit static class fields

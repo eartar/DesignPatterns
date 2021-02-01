@@ -1,0 +1,4 @@
+This architecture works because of the nature of static classes in Java.
+
+The static singleton class is initialized before everything else, making it effectively thread safe on construction.
+See Initialization-on-demand holder idiom for further reading.

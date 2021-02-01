@@ -1,0 +1,10 @@
+In Singleton Pattern there should be one instance of the class object in your code. No code can create additional instances.
+
+A method to achieve this is to make the constructor private, and have a getInstance method on the class.
+
+However this creates the following problems:
+1 - Serialization will actually copy your singleton - reading from file/stream etc where object -> Singleton cast is made
+2 - Using reflection your class constructor can be made public
+
+While (2) requires explicit invocation of reflection system, (1) can be achieved unknowingly.
+
