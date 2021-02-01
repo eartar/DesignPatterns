@@ -1,0 +1,14 @@
+Prototype Pattern is utilized when an object is required to be copied from another object.
+Java supports cloneable, copy constructor and serializable interface.
+
+What is
+shallow copy: an object is copied from another however they still share common data. Changing x in an object will also
+    change the value of x in the new object. This is terribly error prone and never wanted.
+deep copy: the copied object has no data shared with the actual object.
+
+clone: Clones an object however creates a shallow copy by default.
+copy contructor: can implement these to work as deep copy, however you have to write copy constructors to every class you might need to copy.
+serializable: Apache Commons has a roundTrip function which serialize and then deserialize an object to create a copy
+
+Ignoring the performance constraints, serializable is a good way of implementing copying of objects.
+There are other methods to achieve copying as well.
