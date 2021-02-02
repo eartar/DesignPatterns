@@ -13,7 +13,7 @@ public class SolutionMonostate {
         s1.setId(52365);
 
         System.out.println(s2);
-        System.out.println("S1 also has become:");
+        System.out.println("S1 has also become:");
         System.out.println(s1);
     }
 }

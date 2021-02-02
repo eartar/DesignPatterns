@@ -2,6 +2,7 @@ Monostate singleton is a class that acts like a singleton. These are also called
 
 This is terrible for many reasons;
 - No way of communicating the client that this is actually a singleton class
+    - The constructor being public creates the illusion that multiple objects of this class can be created. But in reality all those objects refer to the same data.
 - You are tightly coupling with the utility class!
     - Mocking tests are problematic: https://dzone.com/articles/static-methods-are-death-testa#
     - These statics are open to rotting. The source code for which they are created may or may not exist anymore. They have a tendency to accumulate over time.
