@@ -1,0 +1,1 @@
+Decorator and wrapper are synonyms in design patterns.

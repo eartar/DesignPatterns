@@ -1,0 +1,3 @@
+The Multiton Design Pattern can be considered as a wrapper over multiple singletons.
+The multiton can have multiple instances inside, however each of them will refer to the same object. Lazy initialization
+and enums are mostly used in implementation of the multiton pattern.

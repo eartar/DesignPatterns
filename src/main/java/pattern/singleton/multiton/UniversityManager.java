@@ -1,10 +1,11 @@
 package pattern.singleton.multiton;
 
+import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 import java.util.HashMap;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UniversityManager {
 
     private static HashMap<ManagerType, UniversityManager>  managers = new HashMap<>();

@@ -1,0 +1,41 @@
+Assume you are creating the following blood types;
+A rh+
+A rh-
+B rh+
+B rh-
+
+To make your classes extendable you wish to use inheritance
+
+BloodType
+* RhPos
+    * A
+    * B
+* RhNeg
+    * A
+    * B
+
+Is a terrible way of doing this since you are duplicating A and B.
+
+BloodType
+* A
+    * rh-
+    * rh+
+* B
+    * rh-
+    * rh+
+
+is still terrible since you are duplicating rh. There is no way around making this inheritance meaningful.
+
+Bridge pattern is a solution for such problems when duplicity is apparent.
+The idea comes from "prefer composition over inheritance".
+
+Lets make rh class aggregate to Blood Type class so our hierarchy will look like;
+
+BloodType<>---- RhType
+* A             * rh-
+* B             * rh+
+
+Now modifications can be done on each class without effecting other classes.
+
+Imagine Bike/Car instead of A/B and Assemble/Produce instead of rh-/rh+ to get the idea, where each of the classes are heavy duty.
+In all these cases, bridge design pattern achieve decoupling and makes the code base much maintainable.

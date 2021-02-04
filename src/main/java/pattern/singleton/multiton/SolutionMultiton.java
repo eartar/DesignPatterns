@@ -6,6 +6,7 @@ public class SolutionMultiton {
         UniversityManager managerTA = UniversityManager.getInstance(ManagerType.Student);
         UniversityManager managerTA2 = UniversityManager.getInstance(ManagerType.Student);
 
-        System.out.println(managerTA == managerStudent);
+
+        //managerTA and managerTA2 refer to the same object in the singleton
     }
 }

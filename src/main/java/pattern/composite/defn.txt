@@ -1,0 +1,5 @@
+Imagine an e-commerce website, where you can add products to your cart. On top of adding items one by one, you can also
+add bundles to your cart. For simplicity lets not have bundle pricing etc.
+
+Therefore the system requires implementation of tree-like structure for items in your cart. Through the architecture
+we can iterate through the items as if we are working with a tree.
