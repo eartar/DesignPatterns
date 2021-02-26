@@ -1,0 +1,7 @@
+Proxy has a wrapper-like structure. It is similar to Decorator in a sense.
+
+The main differences are
+ - that proxy provides an identical interface, however decorator can provide functional extensions.
+ - Proxy can be virtual, working on a un-initialized object
+
+Proxy pattern is good for security and obscuring the actual service.

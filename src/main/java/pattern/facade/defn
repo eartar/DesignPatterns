@@ -1,0 +1,2 @@
+Create a single wrapper class to hide details behind encapsulation.
+Unlike factory, a facade is also responsible for operations of its parts.
