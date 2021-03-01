@@ -1,3 +1,4 @@
+/*
 package pattern.statemachine;
 
 import org.springframework.statemachine.StateMachine;
@@ -92,3 +93,4 @@ public class SolutionStatemachine {
         BufferedReader
     }
 }
+*/
